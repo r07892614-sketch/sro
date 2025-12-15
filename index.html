@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- Meta Pixel Code -->
+<head><!-- META PIXEL + AUTO SUBSCRIBE (ONE SINGLE CODE) -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1268033491794639');
-fbq('track', 'PageView');
+s.parentNode.insertBefore(t,s)
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1268033491794639');
+fbq('track','PageView');
+
+/* REAL SUBSCRIBE – ONLY ON THANK YOU / SUCCESS PAGE */
+if (
+  window.location.href.includes('thank') ||
+  window.location.href.includes('success') ||
+  window.location.href.includes('confirm')
+){
+  fbq('track','Subscribe',{
+    value: 1.00,
+    currency: 'INR'
+  });
+}
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1268033491794639&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<!-- END -->
 <meta charset="UTF-8">
 <title>SUPER_REPOTER • Official</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -168,10 +178,11 @@ body{
   </div>
 
   <!-- A tag as button -->
-  <a class="btn" href="https://t.me/+rKCQHRgeb_pkZWI9" target="_blank">JOIN [𝗦𝗨𝗣𝗘𝗥_𝗥𝗘𝗣𝗢𝗧𝗘𝗥 ᵒʷⁿᵉʳ] CHANNEL</a>
+  <a class="btn" href="https://t.me/+5DoryKT15q1kYjBl" target="_blank">JOIN [𝗦𝗨𝗣𝗘𝗥_𝗥𝗘𝗣𝗢𝗧𝗘𝗥 ᵒʷⁿᵉʳ] CHANNEL</a>
 
 </div>
 
 </body>
 </html>
+
 
